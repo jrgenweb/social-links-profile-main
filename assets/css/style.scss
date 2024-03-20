@@ -40,7 +40,7 @@ body {
 }
 
 .social-profile {
-    background-color: $clr-neutral-grey;
+    background-color: $clr-neutral-dark-grey;
     margin: 2rem;
     border-radius: $border-radius;
     text-align: center;
@@ -83,9 +83,16 @@ body {
                 display: block;
                 color: $clr-neutral-white;
                 padding: 1rem 0rem;
-                background-color: lighten($clr-neutral-grey, 10%);
+
+                background-color: $clr-neutral-grey;
                 border-radius: calc($border-radius / 2);
             }
         }
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        min-height: 100vh;
     }
 }
